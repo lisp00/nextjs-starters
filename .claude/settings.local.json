@@ -11,7 +11,10 @@
       "Bash(git stash *)",
       "Bash(gh pr create *)",
       "Read(//Users/dhwoo/.claude/**)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
     ]
   }
 }
