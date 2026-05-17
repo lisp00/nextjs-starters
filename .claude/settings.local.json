@@ -15,7 +15,15 @@
       "Bash(git push *)",
       "Bash(npx tsc *)",
       "Bash(npm run *)",
-      "Bash(npm --version)"
+      "Bash(npm --version)",
+      "Skill(update-config)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(chmod 600 ~/.zshenv)",
+      "Bash(chmod +x ~/.claude/slack-notify.sh)",
+      "Bash(bash ~/.claude/slack-notify.sh permission)",
+      "Bash(bash ~/.claude/slack-notify.sh stop)",
+      "Bash(awk '{print $1, $9}')"
     ]
   }
 }
