@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m 'CLAUDE.md 작성: 프로젝트 개발 가이드 문서 추가 *)",
+      "Bash(gh auth *)",
+      "Bash(git diff *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git checkout -b *)",
+      "Bash(git log *)",
+      "Bash(git stash *)",
+      "Bash(gh pr create *)",
+      "Read(//Users/dhwoo/.claude/**)",
+      "Bash(git commit *)"
+    ]
+  }
+}
