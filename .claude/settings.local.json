@@ -23,7 +23,15 @@
       "Bash(chmod +x ~/.claude/slack-notify.sh)",
       "Bash(bash ~/.claude/slack-notify.sh permission)",
       "Bash(bash ~/.claude/slack-notify.sh stop)",
-      "Bash(awk '{print $1, $9}')"
+      "Bash(awk '{print $1, $9}')",
+      "mcp_sequential-thinking",
+      "mcp_context7"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "context7",
+    "sequential-thinking",
+    "shadcn"
+  ],
+  "enableAllProjectMcpServers": true
 }
