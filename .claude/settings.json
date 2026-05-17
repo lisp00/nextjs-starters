@@ -1,0 +1,38 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; echo \"[$(date +'%Y-%m-%d %H:%M:%S')] Prettier formatting: $f\" >> ~/.claude/prettier-hook.log; npx prettier --write \"$f\" >> ~/.claude/prettier-hook.log 2>&1 && echo \"  ✓ Success\" >> ~/.claude/prettier-hook.log || echo \"  ✗ Failed\" >> ~/.claude/prettier-hook.log; } || true",
+            "statusMessage": "Prettier 포맷팅 중..."
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/slack-notify.sh permission",
+            "statusMessage": "Slack 권한 요청 알림 전송 중..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/.claude/slack-notify.sh stop",
+            "statusMessage": "Slack 완료 알림 전송 중..."
+          }
+        ]
+      }
+    ]
+  }
+}

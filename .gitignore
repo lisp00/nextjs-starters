@@ -43,4 +43,8 @@ next-env.d.ts
 # claude code
 .claude/
 !.claude/commands/
+!.claude/settings.json
 !.claude/settings.local.json
+
+# prettier hook logs
+~/.claude/prettier-hook.log
